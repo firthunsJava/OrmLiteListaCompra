@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardFila"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    android:background="#746E6E"
+    app:cardCornerRadius="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="2dp"
+        android:background="#7A7474"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtProductoFilaCard"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:hint="Producto"
+                android:padding="2dp"
+                android:textAlignment="center"
+                android:textColor="#F2F0F0"
+                android:textColorHint="#F8F1F1"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtCantidadFilaCard"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:hint="Cantidad"
+                    android:padding="2dp"
+                    android:textAlignment="center"
+                    android:textColor="#F2F0F0"
+                    android:textColorHint="#F7F3F3"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtPrecioFilaCard"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:hint="Precio"
+                    android:padding="2dp"
+                    android:textAlignment="center"
+                    android:textColor="#F2F0F0"
+                    android:textColorHint="#F7F3F3"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:textAlignment="viewEnd">
+
+            <ImageButton
+                android:id="@+id/imgBtnDelete"
+                android:layout_width="100dp"
+                android:layout_height="62dp"
+                android:layout_margin="5dp"
+                android:layout_weight="2"
+                android:backgroundTint="#EB0909"
+                app:srcCompat="@android:drawable/ic_menu_delete" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
